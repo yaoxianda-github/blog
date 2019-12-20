@@ -47,7 +47,7 @@ public class StartApplication {
 
     public static void main(String[] args) throws Exception{
 
-        log.info("主程序入口");
+        log.info("主程序入口测试");
         SpringApplication app = new SpringApplication(StartApplication.class);
         app.setBannerMode(Banner.Mode.OFF);
         app.setBannerMode(Banner.Mode.OFF);
