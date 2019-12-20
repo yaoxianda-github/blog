@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-# zyk
 用spring boot开发的web博客系统
 # 概述
 
@@ -273,12 +271,3 @@ uid | int| 10  |false| false |组合主键，标签ID
 
 - **以上是我学习springboot总结的一些博客，特此分享**
 
-# 网站地址
-
-  **[www.janti.cn](http://www.zhangyunkang.cn)**
-
-  **[项目代码](https://github.com/zhangyunkang/blog)**
-=======
-# blog
-my blog
->>>>>>> feb09a6539b621410415b4d02b52332a74f090ec
