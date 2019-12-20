@@ -4,6 +4,7 @@ import com.alibaba.druid.pool.DruidDataSource;
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.PropertyAccessor;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.annotation.MapperScan;
@@ -35,6 +36,7 @@ import javax.sql.DataSource;
 @SpringBootApplication
 @EnableScheduling
 @MapperScan("springboot.dao")
+@Slf4j
 public class StartApplication {
 
     @Resource
@@ -45,6 +47,7 @@ public class StartApplication {
 
     public static void main(String[] args) throws Exception{
 
+        log.info("主程序入口");
         SpringApplication app = new SpringApplication(StartApplication.class);
         app.setBannerMode(Banner.Mode.OFF);
         app.setBannerMode(Banner.Mode.OFF);
