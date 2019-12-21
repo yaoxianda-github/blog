@@ -107,8 +107,8 @@
 ------- | -------|
 开发工具 | IDEA
 语言 | JDK1.8, JS, HTML
-数据库 | mysql5.6
-缓存NOSQL | redis
+数据库 | mysql8.0
+缓存NOSQL | redis5.0.7
 项目构建|Maven
 运行环境|阿里云Centos7
 
