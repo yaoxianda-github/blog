@@ -28,7 +28,7 @@ public class HttpServerHandler extends SimpleChannelInboundHandler<HttpJsonReque
     private UserVoMapper userDao;
 
     private static final  Logger logger = LoggerFactory.getLogger(HttpServerHandler.class);
-    @Override
+//    @Override
     protected void channelRead0(ChannelHandlerContext ctx, HttpJsonRequest msg) throws Exception {
         HttpRequest request = msg.getRequest();
         UserVo user = (UserVo)msg.getBody();
@@ -38,4 +38,8 @@ public class HttpServerHandler extends SimpleChannelInboundHandler<HttpJsonReque
     }
 
 
+    @Override
+    protected void messageReceived(ChannelHandlerContext channelHandlerContext, HttpJsonRequest httpJsonRequest) throws Exception {
+
+    }
 }

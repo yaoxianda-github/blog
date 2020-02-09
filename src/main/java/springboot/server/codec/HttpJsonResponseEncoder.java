@@ -24,7 +24,7 @@ public class HttpJsonResponseEncoder extends AbstractHttpJsonEncoder<HttpJsonRes
         }
 
         response.headers().set(HttpHeaderNames.CONTENT_TYPE,"text/json");
-        HttpUtil.setContentLength(response,body.readableBytes());
+//        HttpUtil.setContentLength(response,body.readableBytes());
         out.add(response);
     }
 }
